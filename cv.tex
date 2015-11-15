@@ -1,0 +1,223 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Friggeri Resume/CV
+% XeLaTeX Template
+% Version 1.2 (3/5/15)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Adrien Friggeri (adrien@friggeri.net)
+% https://github.com/afriggeri/CV
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX and the bibliography, if used,
+% needs to be compiled with biber rather than bibtex.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[print]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
+
+\addbibresource{bibliography.bib} % Specify the bibliography file to include publications
+
+%------------
+\usepackage{enumitem}
+\renewenvironment{entrylist}{
+  \begin{itemize}[leftmargin=0.8in]
+}{
+  \end{itemize}
+}
+\renewcommand{\bfseries}{\headingfont\color{headercolor}}
+\renewcommand{\entry}[4]{
+  \item[#1]
+    \textbf{#2}
+    \hfill
+    {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
+    #4\vspace{\parsep}
+}
+%-------
+
+\begin{document}
+
+\header{Zheqi}{ Lu}{Research \& development engineer} % Your name and current job title/field
+
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{aside} % In the aside, each new line forces a line break
+\section{person info}
+Gender: Male
+Birthdate: 1991.11.24
+Date of Availability: 2017.4
+\section{contact}
+Zijinggang Campus Zhejiang University
+Hangzhou Zhejiang 310012
+China
+~
++86 17816861269
+albuscrow@gmail.com
+\section{languages}
+Chinese mother tongue
+English CET4
+\section{programming}
+{\color{red} $\varheartsuit$}Java
+Python, C/C++
+JS/Html/Css
+Lisp, Haskell
+\section{skill key words}
+{\color{red} $\varheartsuit$}Android,Linux
+Git, Cmake, Vim/Emacs
+OpenGL, Django
+Struts+Spring+Hibernate
+\end{aside}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{education}
+\begin{entrylist}
+
+%------------------------------------------------
+
+\entry
+{2014--Now}
+{Masters {\normalfont of Computer Technology}}
+{Zhejiang University}
+{Specialization in Computer Graphics, 研究精确自由变形.并对该方向有浓厚兴趣}
+
+%------------------------------------------------
+
+\entry
+{2010--2014}
+{Bachelor {\normalfont of Computer Science and Technology}}
+{Chongqing University}
+{较为扎实胡掌握了专业基础知识，多次获得奖学金，以优异成绩报送进入浙江大学}
+
+%------------------------------------------------
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{experience}
+
+\subsection{Part Time}
+
+\begin{entrylist}
+
+%------------------------------------------------
+
+\entry
+{2015.7--Now}
+{涛哥的公司}
+{Hangzhou, Zhejiang}
+{\emph{Android Application} \\
+Developed spreadsheets for risk analysis on exotic derivatives on a wide array of commodities (ags, oils, precious and base metals), managed blotter and secondary trades on structured notes, liaised with Middle Office, Sales and Structuring for bookkeeping. \\
+Detailed achievements:
+\begin{itemize}
+\item Learned how to make amazing coffee
+\item Finally determined the reason for \textsc{PC LOAD LETTER}:
+\begin{itemize}
+\item Paper jam
+\item Software issues:
+\begin{itemize}
+\item Word not sending the correct data to printer
+\item Windows trying to print in letter format
+\end{itemize}
+\item Coffee spilled inside printer
+\end{itemize}
+\item Broke the office record for number of kitten pictures in cubicle
+\item Learned how to make more amazing coffee on a new machine
+\end{itemize}}
+
+\entry
+{2015.7--Now}
+{涛哥的公司}
+{Hangzhou, Zhejiang}
+{\emph{Android Application} \\
+Developed spreadsheets for risk analysis on exotic derivatives on a wide array of commodities (ags, oils, precious and base metals), managed blotter and secondary trades on structured notes, liaised with Middle Office, Sales and Structuring for bookkeeping. \\
+Detailed achievements:
+\begin{itemize}
+\item Learned how to make amazing coffee
+\item Finally determined the reason for \textsc{PC LOAD LETTER}:
+\begin{itemize}
+\item Paper jam
+\item Software issues:
+\begin{itemize}
+\item Word not sending the correct data to printer
+\item Windows trying to print in letter format
+\end{itemize}
+\item Coffee spilled inside printer
+\end{itemize}
+\item Broke the office record for number of kitten pictures in cubicle
+\item Learned how to make more amazing coffee on a new machine
+\end{itemize}}
+
+\entry
+{2014.7--2014.12}
+{杭州华舰科技有限公司}
+{Hangzhou, Zhejiang}
+{\emph{Android Application} \\
+zuowaibao}
+
+\entry
+{2014.7--2014.12}
+{杭州华舰科技有限公司}
+{Hangzhou, Zhejiang}
+{\emph{Android Application} \\
+zuowaibao}
+
+\entry
+{2014.7--2013.}
+{chongqing jiudui}
+{Hangzhou, Zhejiang}
+{\emph{Android Application \& Web Application} \\
+    guoguo lingshi zhimingzhi
+}
+
+
+%------------------------------------------------
+
+\end{entrylist}
+
+\subsection{Part Time}
+
+\begin{entrylist}
+
+\entry
+{2010--2011}
+{LEHMAN BROTHERS}
+{London, United Kingdom}
+{\emph{Summer Intern} \\
+Received pre-placed offer from the Exotics Trading Desk as a result of very positive reviews. Rated "truly distinctive" for Analytical Skills and Teamwork.}
+
+%------------------------------------------------
+
+\entry
+{2008-2009}
+{Buy More}
+{Burbank, California}
+{\emph{Computer Repair Specialist} \\
+Worked in the Nerd Herd and helped to solve computer problems by asking customers to turn their computers off and on again.}
+
+%------------------------------------------------
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{interests}
+
+\textbf{professional:} data analysis, company profiling, risk analysis, economics, web design, web app creation, software design, marketing \\
+\textbf{personal:} piano, chess, cooking, dancing, running
+
+\end{document}
