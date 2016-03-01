@@ -50,12 +50,12 @@
 \RequirePackage[quiet]{fontspec}
 \RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
 
-\newfontfamily\bodyfont[]{Calibri}
-\newfontfamily\thinfont[]{Calibri:style=Light}
-\newfontfamily\headingfont[]{Calibri:style=Bold}
+\newfontfamily\bodyfont[]{Microsoft YaHei}
+\newfontfamily\thinfont[]{Microsoft YaHei:style=Light}
+\newfontfamily\headingfont[]{Microsoft YaHei:style=Bold}
 
 \defaultfontfeatures{Mapping=tex-text}
-\setmainfont[Mapping=tex-text, Color=textcolor]{Calibri:style=Light}
+\setmainfont[Mapping=tex-text, Color=textcolor]{Microsoft YaHei:style=Light}
 
 %\newfontfamily\bodyfont[]{Helvetica Neue}
 %\newfontfamily\thinfont[]{Helvetica Neue UltraLight}
@@ -173,7 +173,9 @@
   \renewcommand{\section}[1]{
     \par\vspace{\baselineskip}{\Large\headingfont\color{headercolor} ##1}
   }
-  \begin{textblock}{3.6}(1.5, 4.33)
+  %\begin{textblock}{3.6}(1.5, 4.33)
+  %3.6 宽度，1.5, 4.33,左上坐标
+  \begin{textblock}{4}(1, 4.33)
   \begin{flushright}
   \obeycr
 }{%
