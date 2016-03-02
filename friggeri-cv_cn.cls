@@ -50,12 +50,12 @@
 \RequirePackage[quiet]{fontspec}
 \RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
 
-\newfontfamily\bodyfont[]{Calibri}
-\newfontfamily\thinfont[]{Calibri:style=Light}
-\newfontfamily\headingfont[]{Calibri:style=Bold}
+\newfontfamily\bodyfont[]{Microsoft YaHei}
+\newfontfamily\thinfont[]{Microsoft YaHei:style=Light}
+\newfontfamily\headingfont[]{Microsoft YaHei:style=Bold}
 
 \defaultfontfeatures{Mapping=tex-text}
-\setmainfont[Mapping=tex-text, Color=textcolor]{Calibri:style=Light}
+\setmainfont[Mapping=tex-text, Color=textcolor]{Microsoft YaHei:style=Light}
 
 %\newfontfamily\bodyfont[]{Helvetica Neue}
 %\newfontfamily\thinfont[]{Helvetica Neue UltraLight}
@@ -101,18 +101,18 @@
 \RequirePackage{parskip}
 
 \newcounter{colorCounter}
-\def\@sectioncolor#1#2#3{%
+\def\@sectioncolor#1#2#3#4{%
   {%
     \color{%
       \ifcase\value{colorCounter}%
-        blue\or%
-        red\or%
-        orange\or%
         green\or%
+        orange\or%
+        red\or%
         purple\or%
+        blue\or%
         brown\else%
         headercolor\fi%
-    } #1#2#3%
+    } #1#2#3#4%
   }%
   \stepcounter{colorCounter}%
 }
@@ -152,12 +152,20 @@
   \end{tabular*}
 }
 \renewcommand{\bfseries}{\headingfont\color{headercolor}}
-\newcommand{\entry}[4]{%
-  #1&\parbox[t]{11.8cm}{%
-    \textbf{#2}%
+\newcommand{\entry}[3]{%
+  \parbox[t]{14.0cm}{%
+    \textbf{\large{#1}}%
     \hfill%
-    {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
-    #4\vspace{\parsep}%
+    {\footnotesize\addfontfeature{Color=lightgray} #2}\\%
+    #3\vspace{\parsep}%
+  }\\}
+
+\newcommand{\entryac}[2]{%
+  \parbox[t]{14.0cm}{%
+    \textbf{#1}%
+    \hfill%
+    {\footnotesize\addfontfeature{Color=lightgray} #2}%
+    \vspace{\parsep}%
   }\\}
 
 
@@ -173,7 +181,9 @@
   \renewcommand{\section}[1]{
     \par\vspace{\baselineskip}{\Large\headingfont\color{headercolor} ##1}
   }
-  \begin{textblock}{4.5}(0.5, 4.33)
+  %\begin{textblock}{3.6}(1.5, 4.33)
+  %3.6 宽度，1.5, 4.33,左上坐标
+  \begin{textblock}{5}(0, 4.33)
   \begin{flushright}
   \obeycr
 }{%
