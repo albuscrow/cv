@@ -22,6 +22,15 @@
 \documentclass[]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
 
 \addbibresource{bibliography.bib} % Specify the bibliography file to include publications
+\usepackage{hyperref}
+\usepackage{xcolor}
+\definecolor{darkblue}{rgb}{0.0,0.5,1.0}
+\hypersetup{
+    colorlinks,
+    linkcolor={darkblue},
+    citecolor={darkblue},
+    urlcolor={darkblue}
+}
 
 %------------
 %\usepackage{enumitem}
@@ -41,129 +50,147 @@
 %-------
 \begin{document}
 
-\header{Zheqi}{ Lu}{Intern} % Your name and current job title/field
+\header{Zheqi}{ Lu}{State Key Lab of CAD\&CG,Zhejiang University} % Your name and current job title/field
 
 %----------------------------------------------------------------------------------------
 %	SIDEBAR SECTION
 %----------------------------------------------------------------------------------------
 
 \begin{aside} % In the aside, each new line forces a line break
-\section{personal info}
+\section{Personal Info}
+Age: 24
 Gender: Male
-Birthdate: 11/24/1991
-\section{contact}
-% Zijinggang Campus
+(+86)17816861269
+\href{mailto:albuscrow@gmail.com}{albuscrow@gmail.com}
+\section{education}
+M.E in Computer Technology
 Zhejiang University
-Hangzhou Zhejiang 310012
-China
+Sep.2014-Present
 ~
-+86 17816861269
-albuscrow@gmail.com
-\section{languages}
-Chinese mother tongue
-English CET4
-\section{programming}
-{\color{red} $\varheartsuit$} Java
-Python, C/C++
-JS/HTML/CSS
-Lisp, Haskell
-\section{skill key words}
-{\color{red} $\varheartsuit$} Android,Linux
-Git, Cmake
-Vim/Emacs, Latex
-OpenGL, Django
-Struts+Spring+Hibernate
-\section{interests}
-learn different language
-do online judge
-read, running
+B.E in Computer Science and Technology
+Chongqing University
+Aug.2010-Jun.2014
+%\entryac
+%{Chongqing University, B.E in Computer Science and Technology}
+%{Aug.2010-Jun.2014}
+\section{Works Link}
+%\href{http://app.mi.com/detail/81435}{会小秘}
+\href{http://www.hisensehitachi.com/jstx/index.aspx?nodeid=1162}{iZE Smart Home for Android}
+\href{https://github.com/albuscrow/AFFD}{AFFD 3D Model Editor}
+\href{http://www.jinxizi.cn/android/huozhanggui.html}{2D Fire E-Shop for Android}
+\href{https://github.com/albuscrow/learn_unity}{Space Shooter(Unity3d)}
+\href{http://36kr.com/p/5043478.html}{Wotao for Android}
+\href{https://github.com/albuscrow}{more...}
+\section{Languages}
+Proficient: Java, C/C++
+Intermediate: JavaScript
+Python, Matlab, C\#
+Novice: Lisp, Haskell, SQL
+\section{Skills}
+\LARGE{Android}\normalsize{, }\LARGE{Linux}
+\large{OpenGL}\normalsize{, }\large{Vim}\normalsize{, }\large{Git}\normalsize{, }
+\normalsize{CUDA, Latex, CMake}
+\normalsize{Docker, Emacs, GCC}
+\small{Struts}\normalsize{, }\small{Spring}\normalsize{, }\small{Hibernate}
+\small{Django}\normalsize{, }\small{JQuery}\normalsize{, }\small{unity3d}
+\section{Interests}
+\normalsize{learn new Language
+play video game
+read, running}
 \end{aside}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 
-\section{education}
-\begin{entrylist}
-
-%------------------------------------------------
-
-\entry
-{09/14--Now}
-{Masters {\normalfont of Computer Technology}}
-{Zhejiang University}
-{Specialization in Computer Graphics. Now researching on accurate free-form deform(AFFD).}
-
-%------------------------------------------------
-
-\entry
-{09/10--06/14}
-{Bachelor {\normalfont of Computer Science and Technology}}
-{Chongqing University}
-{ Detailed achievements:
-    \begin{itemize}
-    \item Master solid fundamental and professional knowledge of computer.
-    \item Won many scholarships like Nation Scholarship and so on.
-    \item Lead the team to participate in the American Mathematical Modeling Contest and won Finalist Award.
-    \item Got recommended postgraduate qualification to Zhejiang University with excellent grades.
-\end{itemize}}
-
-%------------------------------------------------
-
-\end{entrylist}
+%\section{education}
+%\begin{entrylist}
+%\entryac
+%{Zhejiang University, M.E in Computer Technology}
+%{Sep.2014-Present}
+%\entryac
+%{Chongqing University, B.E in Computer Science and Technology}
+%{Aug.2010-Jun.2014}
+%\end{entrylist}
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
-
 \section{experience}
-
 \begin{entrylist}
-
-%------------------------------------------------
-
-\entry
-{07/15--Now}
-{Dihansi Tech Co., Ltd.}
-{Hangzhou, China}
-{\emph{Android Application} \\
-    I developed two Android apps(i-ez and D-control) which are used to control Smart Home for the company.
-I learned much about communication with socket.\\
-Detailed skill used:
+\entryact
+{AFFD 3D Model Editor(Python, C++, Qt, OpenGL, Cuda)}
+{2015}
+{The work of my master research which proposes a flexible, robust and efficient algorithm for 3D model local editing. Gain:
 \begin{itemize}
-    \item Communication via Socket(TCP/UDP)
-    \item Transmission data via http
-    \item Build by gradle
-    \item Collaborative Development with git
-    \item Android development technology
+    %\item 主体算法由\href{http://link.springer.com/article/10.1007/s11766-014-3239-6}{AFFD}算法改进而来,修改了其中切割三角形的部分
+    \item Learned how to accelerate program via GPU;
+    \item Greatly enhanced mathematical skills;
 \end{itemize}}
-
-\entry
-{08/14--11/14}
-{Huajian Tech Co., Ltd.}
-{Hangzhou, China}
-{\emph{Android Application} \\
-    The company is a outsourcing company,I developed three Android apps for them:
+\\
+\entryact
+{Wotao(Java, Android)}
+{2015}
+{An android app Jointly developed by my lab and \href{http://wowtao.me/index.html}{Wotao Tech Co., Ltd.}. Which simulate production process of pottery. Gain:
 \begin{itemize}
-    \item HuiXiaoMi, a meeting scheduling management software whose party A is a known office software company.
-    \item IT-Management, an IT asset management software which is used for the management of computer, rooter and so on.
-    \item D-fire, an E-commerce management software which is used by seller who can add/modify/delete/query goods via the app.
+    \item Get experiences of project managing by acting as a PM to some extent;
+    \item Learned how to develop 3D program on mobile;
 \end{itemize}}
-
-\entry
-{08/12--07/13}
-{NineTon Tech Co., Ltd.}
-{Chongqing, China}
-{\emph{Web app \& Android Application} \\
-    My friends set up the start-up company which I contribute my technology to beconme a sharehloder.
-    In the company I developed two software:
-    \begin{itemize}
-        \item 365-shimingzhi, a food and beverage platform like Public Remark Web which include an Android client and a web app. This product is developed with others.It's also my first experience develop something in real world.
-        \item Guoguo Candy, An Android app which can buy snacks from taobao.  It's my first experience develop a softwart all by myself.
-    \end{itemize}}
-
+\\
+\entryact
+{Android APP(Java, Android)}
+{2014-2016}
+{Totally developed 5 APPs for 4 companies(\href{http://www.hjtechcn.cn/}{Huajian}, \href{http://www.2dfire.com/}{2DFire}, \href{http://d-controls.com/}{Dihaosi}, \href{http://www.hisensehitachi.com/}{HITACHI})in a form outsourcing. All of the APPs were delivered with success and achieve customer's satisfaction. Gain:
+\begin{itemize}
+    \item Master Android development;
+    \item Aware of the importance of documentation and communication costs in large projects;
+    \item Get paid 6,000-10,000RMB per month;
+\end{itemize}}
 %------------------------------------------------
 
 \end{entrylist}
 
+
+\section{social practice}
+\begin{entrylist}
+%------------------------------------------------
+\entryact
+{Set up \href{http://nineton.cn/}{Nineton Tech Co., Ltd.}}
+{2012}
+{Become shareholders by means of technology. Detail:
+\begin{itemize}
+    \item Developed a catering platform similar to \href{https://www.dianping.com/}{Dianping} called \href{http://nineton.cn/product.php?id=17}{365 Food Ambition};
+    \item Developed a Android APP for buying snacks called \href{http://apk.gfan.com/Product/App584080.html}{GG Snack};
+    \item Received a title as Advanced Individuals in Innovation-based Entrepreneurial by Chongqing University;
+\end{itemize}
+}
+\\
+\entryact
+{Propagandism in Students Enrolling for Chongqing University}
+{2011}
+{Publicized Chongqing University to students of my high school. Shared some experiences of University Entrance Examinations. Gain:
+\begin{itemize}
+    \item Strengthen the ability of cooperation and communication with others；
+    \item Received a title as Advanced Individuals in Students Enrolling Propagandism;
+\end{itemize}
+}
+\end{entrylist}
+
+\section{awards}
+
+\begin{entrylist}
+%------------------------------------------------
+\entryac
+{Finalist in Mathematical Contest In Modeling}
+{2013}
+\entryac
+{first prize in Student Research Training Program}
+{2013}
+\entryac
+{second prize in "Shusheng Pioneer Cup" Business Plan Competition}
+{2013}
+\entryac
+{National scholarship, National Encouragement scholarship and so on}
+{2010-2014}
+\end{entrylist}
 \end{document}

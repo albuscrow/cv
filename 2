@@ -1,0 +1,179 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Friggeri Resume/CV
+% XeLaTeX Template
+% Version 1.2 (3/5/15)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Adrien Friggeri (adrien@friggeri.net)
+% https://github.com/afriggeri/CV
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX and the bibliography, if used,
+% needs to be compiled with biber rather than bibtex.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
+
+\addbibresource{bibliography.bib} % Specify the bibliography file to include publications
+\usepackage{hyperref}
+\usepackage{xcolor}
+\definecolor{darkblue}{rgb}{0.0,0.5,1.0}
+\hypersetup{
+    colorlinks,
+    linkcolor={darkblue},
+    citecolor={darkblue},
+    urlcolor={darkblue}
+}
+
+%------------
+%\usepackage{enumitem}
+%\renewenvironment{entrylist}{
+%  \begin{itemize}[leftmargin=0.9in]
+%}{
+%  \end{itemize}
+%}
+%\renewcommand{\bfseries}{\headingfont\color{headercolor}}
+%\renewcommand{\entry}[4]{
+%  \item[#1]
+%    \textbf{#2}
+%    \hfill
+%    {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
+%    #4\vspace{\parsep}
+%}
+%-------
+\begin{document}
+
+\header{Zheqi}{ Lu}{State Key Lab of CAD\&CG,Zhejiang University} % Your name and current job title/field
+
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{aside} % In the aside, each new line forces a line break
+\section{personal info}
+Age: 24
+Gender: Male
+(+86)17816861269
+\href{mailto:albuscrow@gmail.com}{albuscrow@gmail.com}
+\section{education}
+Zhejiang University, M.E in Computer Technology
+Chongqing University, B.E in Computer Science and Technology
+\section{works link}
+%\href{http://app.mi.com/detail/81435}{会小秘}
+\href{http://www.hisensehitachi.com/jstx/index.aspx?nodeid=1162}{i-ZE Smart Home for Android}
+\href{https://github.com/albuscrow/AFFD}{AFFD 3D Model Editor}
+\href{http://www.jinxizi.cn/android/huozhanggui.html}{2D Fire E-Shop for Android}
+\href{https://github.com/albuscrow/learn_unity}{Space Shooter(Unity3d)}
+\href{http://36kr.com/p/5043478.html}{Watao for Android}
+\href{https://github.com/albuscrow}{more...}
+\section{skills}
+proficient: Java, C/C++, Android, Linux, Git, Vim
+prior experience: Python, SQL Matlab, C\#, JavaScript
+learned: Lisp, Haskell
+\section{skills}
+GCC, Cmake, Docker
+OpenGL, GLSL, unity
+ Emacs, Latex
+Struts, Spring, Django
+Hibernate, JQuery
+\section{interests}
+learn different language
+do online judge
+read, running
+\end{aside}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{education}
+\begin{entrylist}
+
+%------------------------------------------------
+
+\entry
+{09/14--Now}
+{Masters {\normalfont of Computer Technology}}
+{Zhejiang University}
+{Specialization in Computer Graphics. Now researching on accurate free-form deform(AFFD).}
+
+%------------------------------------------------
+
+\entry
+{09/10--06/14}
+{Bachelor {\normalfont of Computer Science and Technology}}
+{Chongqing University}
+{ Detailed achievements:
+    \begin{itemize}
+    \item Master solid fundamental and professional knowledge of computer.
+    \item Won many scholarships like Nation Scholarship and so on.
+    \item Lead the team to participate in the American Mathematical Modeling Contest and won Finalist Award.
+    \item Got recommended postgraduate qualification to Zhejiang University with excellent grades.
+\end{itemize}}
+
+%------------------------------------------------
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{experience}
+
+\begin{entrylist}
+
+%------------------------------------------------
+
+\entry
+{07/15--Now}
+{Dihansi Tech Co., Ltd.}
+{Hangzhou, China}
+{\emph{Android Application} \\
+    I developed two Android apps(i-ez and D-control) which are used to control Smart Home for the company.
+I learned much about communication with socket.\\
+Detailed skill used:
+\begin{itemize}
+    \item Communication via Socket(TCP/UDP)
+    \item Transmission data via http
+    \item Build by gradle
+    \item Collaborative Development with git
+    \item Android development technology
+\end{itemize}}
+
+\entry
+{08/14--11/14}
+{Huajian Tech Co., Ltd.}
+{Hangzhou, China}
+{\emph{Android Application} \\
+    The company is a outsourcing company,I developed three Android apps for them:
+\begin{itemize}
+    \item HuiXiaoMi, a meeting scheduling management software whose party A is a known office software company.
+    \item IT-Management, an IT asset management software which is used for the management of computer, rooter and so on.
+    \item D-fire, an E-commerce management software which is used by seller who can add/modify/delete/query goods via the app.
+\end{itemize}}
+
+\entry
+{08/12--07/13}
+{NineTon Tech Co., Ltd.}
+{Chongqing, China}
+{\emph{Web app \& Android Application} \\
+    My friends set up the start-up company which I contribute my technology to beconme a sharehloder.
+    In the company I developed two software:
+    \begin{itemize}
+        \item 365-shimingzhi, a food and beverage platform like Public Remark Web which include an Android client and a web app. This product is developed with others.It's also my first experience develop something in real world.
+        \item Guoguo Candy, An Android app which can buy snacks from taobao.  It's my first experience develop a softwart all by myself.
+    \end{itemize}}
+
+%------------------------------------------------
+
+\end{entrylist}
+
+\end{document}

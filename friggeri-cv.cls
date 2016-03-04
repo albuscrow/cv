@@ -50,12 +50,14 @@
 \RequirePackage[quiet]{fontspec}
 \RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
 
-\newfontfamily\bodyfont[]{Calibri}
-\newfontfamily\thinfont[]{Calibri:style=Light}
-\newfontfamily\headingfont[]{Calibri:style=Bold}
+\newfontfamily\bodyfont[Scale=1.2]{Calibri:}
+\newfontfamily\thinfont[Scale=1.2]{Calibri:style=Light}
+\newfontfamily\headingfont[Scale=1.2]{Calibri:style=Bold}
+\newfontfamily\mybold[Scale=1.2]{Calibri:style=Bold}
+\newcommand{\mytextbf}[1]{\mybold #1}
 
 \defaultfontfeatures{Mapping=tex-text}
-\setmainfont[Mapping=tex-text, Color=textcolor]{Calibri:style=Light}
+\setmainfont[Mapping=tex-text, Scale=1.2, Color=textcolor]{Calibri:style=Light}
 
 %\newfontfamily\bodyfont[]{Helvetica Neue}
 %\newfontfamily\thinfont[]{Helvetica Neue UltraLight}
@@ -160,6 +162,23 @@
     #4\vspace{\parsep}%
   }\\}
 
+\renewcommand{\bfseries}{\headingfont\color{headercolor}}
+\newcommand{\entryact}[3]{%
+  \parbox[t]{14.0cm}{%
+    \textbf{\large{#1}}%
+    \hfill%
+    {\footnotesize\addfontfeature{Color=lightgray} #2}\\%
+    #3\vspace{\parsep}%
+  }\\}
+
+\newcommand{\entryac}[2]{%
+  \parbox[t]{14.0cm}{%
+    \textbf{#1}%
+    \hfill%
+    {\footnotesize\addfontfeature{Color=lightgray} #2}%
+    \vspace{\parsep}%
+  }\\}
+
 
 %%%%%%%%%%%%%%
 % Side block %
@@ -173,7 +192,7 @@
   \renewcommand{\section}[1]{
     \par\vspace{\baselineskip}{\Large\headingfont\color{headercolor} ##1}
   }
-  \begin{textblock}{4.5}(0.5, 4.33)
+  \begin{textblock}{5.5}(0, 4.33)
   \begin{flushright}
   \obeycr
 }{%
