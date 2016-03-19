@@ -50,12 +50,12 @@
 \RequirePackage[quiet]{fontspec}
 \RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
 
-\newfontfamily\bodyfont[]{Microsoft YaHei}
-\newfontfamily\thinfont[]{Microsoft YaHei:style=Light}
-\newfontfamily\headingfont[]{Microsoft YaHei:style=Bold}
+\newfontfamily\bodyfont[Scale=1.0]{Microsoft YaHei}
+\newfontfamily\thinfont[Scale=1.0]{Microsoft YaHei:style=Light}
+\newfontfamily\headingfont[Scale=1.0]{Microsoft YaHei:style=Bold}
 
 \defaultfontfeatures{Mapping=tex-text}
-\setmainfont[Mapping=tex-text, Color=textcolor]{Microsoft YaHei:style=Light}
+\setmainfont[Mapping=tex-text, Color=textcolor, Scale=1.0]{Microsoft YaHei:style=Light}
 
 %\newfontfamily\bodyfont[]{Helvetica Neue}
 %\newfontfamily\thinfont[]{Helvetica Neue UltraLight}
@@ -117,6 +117,15 @@
   \stepcounter{colorCounter}%
 }
 
+\newcommand{\sectionend}[1]{
+  \par\vspace{\parskip}
+  {%
+    \LARGE\headingfont\color{headercolor}%
+    \@sectioncolor #1%
+  }
+  \par\vspace{\parskip}
+}
+
 \renewcommand{\section}[1]{
   \par\vspace{\parskip}
   {%
@@ -158,6 +167,14 @@
     \hfill%
     {\footnotesize\addfontfeature{Color=lightgray} #2}\\%
     #3\vspace{\parsep}%
+  }\\}
+
+\newcommand{\entryend}[3]{%
+  \parbox[t]{14.0cm}{%
+    \textbf{\large{#1}}%
+    \hfill%
+    {\footnotesize\addfontfeature{Color=lightgray} #2}\\%
+    #3%
   }\\}
 
 \newcommand{\entryac}[2]{%
