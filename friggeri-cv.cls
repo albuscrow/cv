@@ -48,7 +48,7 @@
 %%%%%%%%%
 
 \RequirePackage[quiet]{fontspec}
-\RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
+\RequirePackage[math-style=TeX]{unicode-math}
 
 \newfontfamily\bodyfont[Scale=1.2]{Calibri:}
 \newfontfamily\thinfont[Scale=1.2]{Calibri:style=Light}

@@ -48,7 +48,7 @@
 %%%%%%%%%
 
 \RequirePackage[quiet]{fontspec}
-\RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
+\RequirePackage{unicode-math}
 
 \newfontfamily\bodyfont[Scale=1.0]{Microsoft YaHei}
 \newfontfamily\thinfont[Scale=1.0]{Microsoft YaHei:style=Light}

@@ -5,16 +5,11 @@
 \usepackage{hyperref}
 \usepackage{xcolor}
 \definecolor{darkblue}{rgb}{0.0,0.5,1.0}
-\hypersetup{
-    colorlinks,
-    linkcolor={darkblue},
-    citecolor={darkblue},
-    urlcolor={darkblue}
-}
+\hypersetup{colorlinks, linkcolor={darkblue}, citecolor={darkblue}, urlcolor={darkblue}}
 
 \begin{document}
 
-\header{陆}{哲琪}{浙江大学计算机辅助设计与图形学国家重点实验室} % Your name and current job title/field
+\header{陆}{哲琪}{应聘职位} % Your name and current job title/field
 
 %----------------------------------------------------------------------------------------
 %	SIDEBAR SECTION
@@ -22,81 +17,125 @@
 
 \begin{aside} % In the aside, each new line forces a line break
 \section{个人信息}
-男，24周岁
-毕业时间：2017-3
+男，27周岁
+三年工作经验
 (+86)17816861269
 \href{mailto:albuscrow@gmail.com}{albuscrow@gmail.com}
+\href{https://github.com/albuscrow}{Github}
 \section{教育经历}
 本科：重庆大学计算机学院
 硕士：浙江大学计算机学院
-\section{作品链接}
+%\section{作品链接}
 %\href{http://app.mi.com/detail/81435}{会小秘}
-\href{http://www.hisensehitachi.com/jstx/index.aspx?nodeid=1162}{iZE智能控制器Android端}
-\href{https://github.com/albuscrow/AFFD}{AFFD三维模型编辑器}
-\href{http://www.jinxizi.cn/android/huozhanggui.html}{二维火掌柜Android端}
-\href{https://github.com/albuscrow/learn_unity}{雷电游戏}
-\href{http://36kr.com/p/5043478.html}{哇陶Android端}
-\href{https://github.com/albuscrow}{更多...}
+%\href{http://www.hisensehitachi.com/jstx/index.aspx?nodeid=1162}{iZE智能控制器Android端}
+%\href{https://github.com/albuscrow/AFFD}{AFFD三维模型编辑器}
+%\href{http://www.jinxizi.cn/android/huozhanggui.html}{二维火掌柜Android端}
+%\href{https://github.com/albuscrow/learn_unity}{雷电游戏}
+%\href{http://36kr.com/p/5043478.html}{哇陶Android端}
 \section{编程语言}
-基本掌握：Java，C/C++
-较为熟练：Python，Lisp Matlab，C\#，JavaScript
-大致了解：SQL，Haskell
+基本掌握：C/C++,Java,Python
+较为熟练：Kotlin,Dart
+  JavaScript
+Lisp,Matlab,Shell
+大致了解：SQL，Haskell,C\#
 %{\color{red} $\varheartsuit$} Java 熟练掌握
 \section{各类技能}
 \LARGE{Android}\normalsize{，}\LARGE{Linux}
 \large{OpenGL/GLSL}\normalsize{，}\large{CUDA}
-\large{Git}\normalsize{，}\large{Vim}\normalsize{，GCC，Cmake}
-\normalsize{QT，Docker，Emacs，Latex}
+\LARGE{QT}\normalsize{，}\LARGE{Flutter}
+\large{Git}\normalsize{，}\large{Vim}\normalsize{GCC，Cmake}
+\normalsize{Django, Vue, Docker}
+\normalsize{Emacs，Latex}
 \small{Struts}\normalsize{，}\small{Spring}\normalsize{，}\small{Hibernate}
-\small{Django}\normalsize{，}\small{JQuery}\normalsize{，}\small{unity3d}
-\section{兴趣爱好}
-\normalsize{折腾各种系统和软件
-学习新的语言和框架
-看书，跑步，玩游戏}
+\small{Django}\normalsize{，}\small{JQuery}\normalsize{，}\small{Unity3d}
+%\section{兴趣爱好}
+%\normalsize{折腾各种系统和软件
+%学习新的语言和框架
+%看书，跑步，玩游戏}
 \end{aside}
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
-\section{项目经历}
+\section{工作经历}
 \begin{entrylist}
-%------------------------------------------------
-
 \entry
-{三维模型编辑器(Python，C++，Qt，OpenGL，CUDA)}
-{2015}
-{这是硕士阶段的科研任务，目标是实现一个灵活、鲁棒、高效的三维模型局部编辑算法。
-    收获：
+{学生时期(Java，Python，C++，GPU编程，Android，Qt)}
+{2012~2017}
+{本科时便对计算机专业有浓厚兴趣，希望学以致用。为多家公司(\href{http://www.hjtechcn.cn/}{华舰}、\href{http://www.2dfire.com/}{二维火}、\href{http://d-controls.com/}{迪浩斯}、\href{http://www.hisensehitachi.com/}{日立})以外包的形式开发/维护了共5款Android App，均顺利交付。收获：
+\begin{itemize}
+    \item 熟练掌握了Android应用开发，积累了大量实际工程开发经验。
+%的各种要素：屏幕适配、网络请求、工程构建、
+    %    协同开发、代码管理、Bug追踪、测试、模块化开发、各类开发工具的使用等；
+    \item 报酬约为6k-10k/月；
+\end{itemize}
+  研究生课题是精确自由变形(AFFD)，目标是实现一个灵活、鲁棒、高效的三维模型局部编辑算法。收获：
 \begin{itemize}
     %\item 主体算法由\href{http://link.springer.com/article/10.1007/s11766-014-3239-6}{AFFD}算法改进而来,修改了其中切割三角形的部分
     %\item 通过OpenGL compute shader，实现GPU并行加速和跨平台, 基本掌握GLSL；
     %\item 极大的增强的自己的数学功底，对并行环境下的程序开发有了一定的了解；
+    \item 对自由变形有了较系统的了解，改进了\href{http://link.springer.com/article/10.1007/s11766-014-3239-6}{AFFD}算法，使之更加鲁棒高效，并移植到了移动平台；
+    \item 通过OpenGL compute shader，实现GPU并行加速和跨平台；
+    \item 掌握大量计算几何基础内容；
+\end{itemize}
+  研究生期间还主导了哇陶的开发。哇陶是所在CAD&CG实验室与\href{http://wowtao.me/index.html}{哇陶科技}合作开发的一款移动APP，致力于将DIY陶瓷的过程从线下带到线上，并借此打造一个瓷器交易平台。收获：
+\begin{itemize}
+    \item 开发的同时负责和客户沟通，积累了需求分析，项目进度方面的管理经验；
+    \item 尝试解决需求变化和代码质量、工程进度之间的矛盾。在此过程中为解决此类问题积累了一定的经验；
+\end{itemize} }
 
-    \item 基本掌握GPU并行环境下的程序开发；
-    \item 极大的增强的自己的数学功底；
-\end{itemize}}
-\\
+%\entry
+%{研究生(Python，C++，Qt，OpenGL，CUDA)}
+%{2014~2015}
+%\\
+
 \entry
-{哇陶(Java，Android)}
-{2015}
-{哇陶是所在实验室与\href{http://wowtao.me/index.html}{哇陶科技}合作开发的一款软件，致力于将DIY陶瓷的过程从线下带
-    到线上，并借此打造一个瓷器交易平台。我负责Android端的开发。收获：
+  {AutoDesk上海研发中心实习(DX12, C++, VS, GPUView)}
+{2016}
+{试验DirectX3 12的各项新特性，量化其性能的提升，并探索将其用于AutoCAD以提高该软件绘图性能的可行性，最终将帧率提升约21\%。收获：
 \begin{itemize}
-    \item 一定程度上扮演了项目经理的角色，具备一定的项目管理经验；
-    \item 尝试解决需求变化和代码质量、工程进度之间的矛盾。在此过程中为解决此类问
-        题积累了一定的经验；
+    \item 对现代GPU的特性与架构有了更加深入的了解，图形API的发展趋向于给用户更细粒度的控制，更贴近硬件的接口；
+    \item 对大型软件开发的流程有了更加全面的认识，其系统全面的自动化测试令人映像深刻；
 \end{itemize}}
-\\
-\entry
-{移动APP开发(Java，Android)}
-{2014-2016}
-{为多家公司(\href{http://www.hjtechcn.cn/}{华舰}、\href{http://www.2dfire.com/}{二维火}、\href{http://d-controls.com/}{迪浩斯}、\href{http://www.hisensehitachi.com/}{日立})以外包的形式开发/维护过共5款Android App，均顺利交付。收获：
-\begin{itemize}
-    \item 熟练掌握了Android应用开发；
-%的各种要素：屏幕适配、网络请求、工程构建、
-    %    协同开发、代码管理、Bug追踪、测试、模块化开发、各类开发工具的使用等；
-    \item 意识到了大型工程中的沟通成本和文档的重要性；
-    \item 报酬约为6k-10k/月；
-\end{itemize}}
+
+%\entry
+%{三维模型编辑器(Python，C++，Qt，OpenGL，CUDA)}
+%{2015}
+%{这是硕士阶段的科研任务，目标是实现一个灵活、鲁棒、高效的三维模型局部编辑算法。
+%    收获：
+%\begin{itemize}
+%    %\item 主体算法由\href{http://link.springer.com/article/10.1007/s11766-014-3239-6}{AFFD}算法改进而来,修改了其中切割三角形的部分
+%    %\item 通过OpenGL compute shader，实现GPU并行加速和跨平台, 基本掌握GLSL；
+%    %\item 极大的增强的自己的数学功底，对并行环境下的程序开发有了一定的了解；
+%
+%    \item 基本掌握GPU并行环境下的程序开发；
+%    \item 极大的增强的自己的数学功底；
+%\end{itemize}}
+%\\
+
+%------------------------------------------------
+
+%\entry
+%{哇陶(Java，Android)}
+%{2015}
+%{哇陶是所在实验室与\href{http://wowtao.me/index.html}{哇陶科技}合作开发的一款软件，致力于将DIY陶瓷的过程从线下带
+%    到线上，并借此打造一个瓷器交易平台。我负责Android端的开发。收获：
+%\begin{itemize}
+%    \item 一定程度上扮演了项目经理的角色，具备一定的项目管理经验；
+%    \item 尝试解决需求变化和代码质量、工程进度之间的矛盾。在此过程中为解决此类问
+%        题积累了一定的经验；
+%\end{itemize}}
+%\\
+%\entry
+%{移动APP开发(Java，Android)}
+%{2014-2016}
+%{为多家公司(\href{http://www.hjtechcn.cn/}{华舰}、\href{http://www.2dfire.com/}{二维火}、\href{http://d-controls.com/}{迪浩斯}、\href{http://www.hisensehitachi.com/}{日立})以外包的形式开发/维护过共5款Android App，均顺利交付。收获：
+%\begin{itemize}
+%    \item 熟练掌握了Android应用开发；
+%%的各种要素：屏幕适配、网络请求、工程构建、
+%    %    协同开发、代码管理、Bug追踪、测试、模块化开发、各类开发工具的使用等；
+%    \item 意识到了大型工程中的沟通成本和文档的重要性；
+%    \item 报酬约为6k-10k/月；
+%\end{itemize}}
 
 \end{entrylist}
 
@@ -123,6 +162,7 @@
 
 %------------------------------------------------
 \end{entrylist}
+
 \sectionend{社会实践}
 \begin{entrylist}
 %------------------------------------------------
